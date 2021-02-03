@@ -8,8 +8,6 @@ import SelectMenu from './components/SelectMenu.vue';
 import Tab from './components/Tab.vue';
 import Tabs from './components/Tabs.vue';
 
-import Demo from './Demo.vue';
-
 export { 
     AutocompleteSearchInput,
     Button,
@@ -19,6 +17,5 @@ export {
     Select,
     SelectMenu,
     Tab,
-    Tabs,
-    Demo
+    Tabs
  };

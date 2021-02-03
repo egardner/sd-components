@@ -29,18 +29,18 @@ module.exports = {
 		vue2.createVuePlugin(),
 
 		// Explicitly emit an index.html file for demo purposes
-		{
-			name: 'emit-index',
-			generateBundle() {
-				this.emitFile({
-					type: 'asset',
-					fileName: 'index.html',
-					source: fs.readFileSync(
-						path.resolve(__dirname, 'index.dist.html'),
-						'utf-8'
-					)
-				})
-			}
-        }
+		// {
+		// 	name: 'emit-index',
+		// 	generateBundle() {
+		// 		this.emitFile({
+		// 			type: 'asset',
+		// 			fileName: 'index.html',
+		// 			source: fs.readFileSync(
+		// 				path.resolve(__dirname, 'index.dist.html'),
+		// 				'utf-8'
+		// 			)
+		// 		})
+		// 	}
+        // }
 	]
 };

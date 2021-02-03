@@ -198,7 +198,7 @@
       this[o] = __cssModules$1[o];
     }
   }
-  var SdButton = component$1.exports;
+  var Button = component$1.exports;
   var render$2 = function() {
     var _vm = this;
     var _h = _vm.$createElement;
@@ -317,7 +317,6 @@
   const sdIconError = "M13.728 1H6.272L1 6.272v7.456L6.272 19h7.456L19 13.728V6.272zM11 15H9v-2h2zm0-4H9V5h2z";
   const sdIconAlert = "M11.53 2.3A1.85 1.85 0 0010 1.21 1.85 1.85 0 008.48 2.3L.36 16.36C-.48 17.81.21 19 1.88 19h16.24c1.67 0 2.36-1.19 1.52-2.64zM11 16H9v-2h2zm0-4H9V6h2z";
   const sdIconCheck = "M7 14.17L2.83 10l-1.41 1.41L7 17 19 5l-1.41-1.42z";
-  const sdIconCamera = "M10 16c-4.455 0-6.685-5.386-3.535-8.535C9.615 4.315 15 6.545 15 11a5 5 0 01-5 5zM6.42 2.56l-.67.64c-.37.357-.865.808-1.38.81H2C.914 4 0 4.712 0 5.76v10.48C0 17.27 1 18 2 18h16c1 0 2-.716 2-1.76V5.76C20 4.723 19 4 18 4h-2.37c-.515-.002-1.01-.453-1.38-.81l-.67-.64A2 2 0 0012.2 2H7.8a2 2 0 00-1.38.56z M13 11 A3 3 0 0 1 10 14 A3 3 0 0 1 7 11 A3 3 0 0 1 13 11 z";
   const sdIconExpand = "M17.5 4.75l-7.5 7.5-7.5-7.5L1 6.25l9 9 9-9z";
   var render$3 = function() {
     var _vm = this;
@@ -350,7 +349,7 @@
   const script$3 = {
     name: "SdAutocompleteSearchInput",
     components: {
-      "sd-button": SdButton,
+      "sd-button": Button,
       "sd-icon": Icon,
       "sd-select-menu": SelectMenu
     },
@@ -513,7 +512,7 @@
       this[o] = __cssModules$3[o];
     }
   }
-  var SdAutocompleteSearchInput = component$3.exports;
+  var AutocompleteSearchInput = component$3.exports;
   var render$4 = function() {
     var _vm = this;
     var _h = _vm.$createElement;
@@ -563,7 +562,7 @@
       this[o] = __cssModules$4[o];
     }
   }
-  var SdMessage = component$4.exports;
+  var Message = component$4.exports;
   var render$5 = function() {
     var _vm = this;
     var _h = _vm.$createElement;
@@ -790,7 +789,7 @@
       this[o] = __cssModules$6[o];
     }
   }
-  var SdSelect = component$6.exports;
+  var Select = component$6.exports;
   var render$7 = function() {
     var _vm = this;
     var _h = _vm.$createElement;
@@ -832,7 +831,7 @@
       this[o] = __cssModules$7[o];
     }
   }
-  var SdTab = component$7.exports;
+  var Tab = component$7.exports;
   var render$8 = function() {
     var _vm = this;
     var _h = _vm.$createElement;
@@ -988,76 +987,16 @@
       this[o] = __cssModules$8[o];
     }
   }
-  var SdTabs = component$8.exports;
-  var render$9 = function() {
-    var _vm = this;
-    var _h = _vm.$createElement;
-    var _c = _vm._self._c || _h;
-    return _c("div", {attrs: {id: "demo"}}, [_c("h1", [_vm._v("SD-Components")]), _vm._v(" "), _c("h2", [_vm._v("AutocompleteSearchInput.vue")]), _vm._v(" "), _c("sd-autocomplete-search-input", {attrs: {name: "demo-autocomplete", label: "demo-label", initialValue: _vm.autocompleteInputValue, placeholder: "Foo, bar", lookupResults: _vm.fakeLookupResults}, on: {input: _vm.fakeGetLookupResults, "clear-lookup-results": _vm.clearLookupResults}}), _vm._v(" "), _c("br"), _vm._v(" "), _c("hr"), _vm._v(" "), _c("h2", [_vm._v("Button.vue")]), _vm._v(" "), _c("h3", [_vm._v("Primary")]), _vm._v(" "), _c("sd-button", {attrs: {primary: true}}, [_vm._v("Primary button")]), _vm._v(" "), _c("h3", [_vm._v("Progressive")]), _vm._v(" "), _c("sd-button", {attrs: {progressive: true}}, [_vm._v("Progressive button")]), _vm._v(" "), _c("h3", [_vm._v("Disabled")]), _vm._v(" "), _c("sd-button", {attrs: {disabled: true}}, [_vm._v("Disabled button")]), _vm._v(" "), _c("h3", [_vm._v("Destructive")]), _vm._v(" "), _c("sd-button", {attrs: {destructive: true}}, [_vm._v("Destructive button")]), _vm._v(" "), _c("h3", [_vm._v("Frameless")]), _vm._v(" "), _c("sd-button", {attrs: {frameless: true}}, [_vm._v("Frameless button")]), _vm._v(" "), _c("h3", [_vm._v("With Icons")]), _vm._v(" "), _c("sd-button", {attrs: {icon: _vm.sdIconSearch}}, [_vm._v("Icon button")]), _vm._v(" "), _c("br"), _vm._v(" "), _c("br"), _vm._v(" "), _c("sd-button", {attrs: {icon: _vm.sdIconSearch, invisibleText: true}}, [_vm._v("\n        Icon button with hidden text\n    ")]), _vm._v("\n\n    \xA0\n\n    "), _c("sd-button", {attrs: {icon: _vm.sdIconCamera, primary: true, invisibleText: true}}, [_vm._v("\n        Icon button\n    ")]), _vm._v("\n\n    \xA0\n\n    "), _c("sd-button", {attrs: {icon: _vm.sdIconError, primary: true, destructive: true, invisibleText: true}}, [_vm._v("\n        Icon button\n    ")]), _vm._v(" "), _c("hr"), _vm._v(" "), _c("h2", [_vm._v("Select.vue")]), _vm._v(" "), _c("sd-select", {attrs: {name: "demo-select", items: _vm.fakeSelectItems}}), _vm._v(" "), _c("hr"), _vm._v(" "), _c("h2", [_vm._v("Tabs.vue")]), _vm._v(" "), _c("sd-tabs", [_c("sd-tab", {attrs: {name: "one", title: "Tab One"}}, [_c("h3", [_vm._v("Foo Bar")])]), _vm._v(" "), _c("sd-tab", {attrs: {name: "two", title: "Tab Two"}}, [_c("h3", [_vm._v("Baz Quux")])])], 1), _vm._v(" "), _c("hr"), _vm._v(" "), _c("h2", [_vm._v("Message.vue")]), _vm._v(" "), _c("sd-message", {attrs: {type: "notice"}}, [_vm._v("Test Message")]), _vm._v(" "), _c("sd-message", {attrs: {type: "success"}}, [_vm._v("Test Message")]), _vm._v(" "), _c("sd-message", {attrs: {type: "warning"}}, [_vm._v("Test Message")]), _vm._v(" "), _c("sd-message", {attrs: {type: "error"}}, [_vm._v("Test Message")]), _vm._v(" "), _c("br")], 1);
-  };
-  var staticRenderFns$9 = [];
-  const script$9 = {
-    components: {
-      SdAutocompleteSearchInput,
-      SdButton,
-      SdSelect,
-      SdTabs,
-      SdTab,
-      SdMessage
-    },
-    data() {
-      return {
-        sdIconCamera,
-        sdIconError,
-        sdIconSearch,
-        fakeLookupResults: [],
-        autocompleteInputValue: "",
-        fakeSelectItems: [
-          {
-            label: "Apples",
-            value: "apples"
-          },
-          {
-            label: "Bananas",
-            value: "bananas"
-          },
-          {
-            label: "Grapefruit",
-            value: "grapefruit"
-          }
-        ]
-      };
-    },
-    methods: {
-      clearLookupResults: function() {
-        this.fakeLookupResults = [];
-      },
-      fakeGetLookupResults: function() {
-        clearTimeout(this.debounceTimeoutId);
-        this.debounceTimeoutId = setTimeout(function() {
-          return ["foo", "bar", "baz", "quux"];
-        }, 250);
-      }
-    }
-  };
-  const __cssModules$9 = {};
-  var component$9 = normalizeComponent(script$9, render$9, staticRenderFns$9, false, injectStyles$9, null, null, null);
-  function injectStyles$9(context) {
-    for (let o in __cssModules$9) {
-      this[o] = __cssModules$9[o];
-    }
-  }
-  var Demo = component$9.exports;
-  exports2.AutocompleteSearchInput = SdAutocompleteSearchInput;
-  exports2.Button = SdButton;
-  exports2.Demo = Demo;
+  var Tabs = component$8.exports;
+  exports2.AutocompleteSearchInput = AutocompleteSearchInput;
+  exports2.Button = Button;
   exports2.Icon = Icon;
-  exports2.Message = SdMessage;
+  exports2.Message = Message;
   exports2.Observer = Observer;
-  exports2.Select = SdSelect;
+  exports2.Select = Select;
   exports2.SelectMenu = SelectMenu;
-  exports2.Tab = SdTab;
-  exports2.Tabs = SdTabs;
+  exports2.Tab = Tab;
+  exports2.Tabs = Tabs;
   Object.defineProperty(exports2, "__esModule", {value: true});
   exports2[Symbol.toStringTag] = "Module";
 });

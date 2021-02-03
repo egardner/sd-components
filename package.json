@@ -8,8 +8,8 @@
 	"module": "./dist/sd-components.es.js",
 	"exports": {
 		".": {
-			"import": "./dist/my-lib.es.js",
-			"require": "./dist/my-lib.umd.js"
+			"import": "./dist/sd-components.es.js",
+			"require": "./dist/sd-components.umd.js"
 		}
 	},
 	"scripts": {

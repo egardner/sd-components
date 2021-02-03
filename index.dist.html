@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="./style.css" rel="stylesheet">
+	<style>
+	#demo {
+		font-family: Avenir, Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color: #2c3e50;
+		padding: 1rem;
+	}
+	</style>
+
+</head>
+<body>
+	<!-- Demo code goes here -->
+	<div id="demo"></div>
+
+	<!-- script type="module" for modern browsers -->
+	<script type="module">
+		import Vue from 'https://unpkg.com/vue@2.6.12/dist/vue.esm.browser.min.js';
+		import { Demo } from './sd-components.es.js';
+
+		new Vue( { 
+			render: function ( h ) { return h( Demo ); }
+		} ).$mount( '#demo' );
+	</script>
+
+	<!-- script nomodule for legacy browsers -->
+	<script nomodule src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+	<script nomodule src="./sd-components.umd.js"></script>
+	<script nomodule>
+		new Vue( { 
+			render: function ( h ) { return h( SDComponents.Demo ); }
+		} ).$mount( '#demo' );
+	</script>
+</body>
+</html>

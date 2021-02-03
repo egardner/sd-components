@@ -1,0 +1,19 @@
+{
+	"name": "@example/sd-components",
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"dev": "npx vite",
+		"build": "npx vite build",
+		"serve": "npx vite preview"
+	},
+	"dependencies": {
+		"vue": "^2.6.12"
+	},
+	"devDependencies": {
+		"less": "^4.1.1",
+		"vite": "^2.0.0-beta.62",
+		"vite-plugin-vue2": "^1.2.0",
+		"wikimedia-ui-base": "^0.18.1"
+	}
+}

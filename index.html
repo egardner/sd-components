@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+	#demo {
+		font-family: Avenir, Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color: #2c3e50;
+		padding: 1rem;
+	}
+	</style>
+</head>
+<body>
+	<!-- Demo code goes here -->
+	<div id="demo">
+	</div>
+
+	<script type="module">
+		import Vue from 'vue';
+		import Demo from './src/Demo.vue'
+
+		new Vue( { render: ( h ) => h( Demo ) } ).$mount( '#demo' )
+	</script>
+</body>
+</html>

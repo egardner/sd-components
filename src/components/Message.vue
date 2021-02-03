@@ -15,7 +15,7 @@
 <script>
 import SdIcon from './Icon.vue';
 import { sdIconInfoFilled, sdIconError, sdIconAlert, sdIconCheck } from '../icons.js';
-const ICON_MAP = {
+var ICON_MAP = {
     notice: sdIconInfoFilled,
     error: sdIconError,
     warning: sdIconAlert,

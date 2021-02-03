@@ -1,19 +1,26 @@
 {
-	"name": "@example/sd-components",
-	"private": true,
+	"name": "sd-components",
+	"files": [
+		"dist"
+	],
 	"version": "0.0.0",
+	"main": "./dist/sd-components.umd.js",
+	"module": "./dist/sd-components.es.js",
+	"exports": {
+		".": {
+			"import": "./dist/my-lib.es.js",
+			"require": "./dist/my-lib.umd.js"
+		}
+	},
 	"scripts": {
 		"dev": "npx vite",
-		"build": "npx vite build && npm run build-legacy",
-		"build-legacy": "npx babel dist/sd-components.umd.js -o dist/sd-components.umd.js",
+		"build": "npx vite build",
 		"serve": "npx vite preview"
 	},
-	"dependencies": {
+	"peerDependencies": {
 		"vue": "^2.6.12"
 	},
 	"devDependencies": {
-		"@babel/cli": "^7.12.13",
-		"@babel/core": "^7.12.10",
 		"less": "^4.1.1",
 		"vite": "^2.0.0-beta.62",
 		"vite-plugin-vue2": "^1.2.0",

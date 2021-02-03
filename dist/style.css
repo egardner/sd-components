@@ -1,0 +1,633 @@
+/**
+ * WikimediaUI Base v0.18.1
+ * Wikimedia Foundation user interface base variables
+ * https://gerrit.wikimedia.org/g/wikimedia-ui-base/
+ *
+ * See also https://design.wikimedia.org/style-guide/
+ */
+.sd-icon {
+  align-items: center;
+  display: inline-flex;
+  font-size: 20 / 16 / 0.875 / 1em;
+  justify-content: center;
+  vertical-align: middle;
+  user-select: none;
+}
+[dir='rtl'] .sd-icon--flip-for-rtl svg {
+  transform: scaleX(-1);
+}
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
+/**
+ * WikimediaUI Base v0.18.1
+ * Wikimedia Foundation user interface base variables
+ * https://gerrit.wikimedia.org/g/wikimedia-ui-base/
+ *
+ * See also https://design.wikimedia.org/style-guide/
+ */
+.sd-button {
+  -webkit-transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
+  -moz-transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
+  transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: #202122;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: bold;
+  padding: 6px;
+  user-select: none;
+}
+.sd-button:hover {
+  background-color: rgba(0, 24, 73, 0.02745098);
+  color: #000;
+}
+.sd-button:focus {
+  border-color: #36c;
+  box-shadow: inset 0 0 0 1px #36c;
+  outline: 0;
+}
+.sd-button .sd-icon {
+  height: 100%;
+  left: 0.35714286em;
+  position: absolute;
+  top: 0;
+  transition: opacity 100ms;
+}
+.sd-button--icon {
+  padding-left: 2.14285714em;
+  position: relative;
+}
+.sd-button--framed {
+  background-color: #f8f9fa;
+  border-color: #a2a9b1;
+  padding: 6px 12px;
+  /* stylelint-disable-next-line no-descending-specificity */
+}
+.sd-button--framed:hover {
+  background-color: #fff;
+  color: #404244;
+}
+.sd-button--framed.sd-button--icon {
+  padding-left: 2.71428571em;
+  position: relative;
+}
+.sd-button--framed .sd-icon {
+  left: 0.78571429em;
+}
+.sd-button--progressive {
+  color: #36c;
+}
+.sd-button--progressive:hover {
+  color: #447ff5;
+}
+.sd-button--progressive.sd-button--framed:hover {
+  border-color: #447ff5;
+}
+.sd-button--destructive {
+  color: #d33;
+}
+.sd-button--destructive:hover {
+  color: #ff4242;
+}
+.sd-button--destructive:focus {
+  border-color: #d33;
+  box-shadow: inset 0 0 0 1px #d33;
+}
+.sd-button--destructive.sd-button--framed:hover {
+  border-color: #ff4242;
+}
+.sd-button--destructive.sd-button--framed:focus {
+  box-shadow: inset 0 0 0 1px #d33 inset 0 0 0 2px #fff;
+}
+.sd-button--primary.sd-button--framed {
+  background-color: #36c;
+  border-color: #36c;
+  color: #fff;
+}
+.sd-button--primary.sd-button--framed:hover {
+  background-color: #447ff5;
+  border-color: #447ff5;
+}
+.sd-button--primary.sd-button--framed:focus {
+  box-shadow: inset 0 0 0 1px #36c, inset 0 0 0 2px #fff;
+}
+.sd-button--primary.sd-button--framed.sd-button--destructive {
+  background-color: #d33;
+  border-color: #d33;
+}
+.sd-button--primary.sd-button--framed.sd-button--destructive:hover {
+  background-color: #ff4242;
+  border-color: #ff4242;
+}
+.sd-button--primary.sd-button--framed.sd-button--destructive:focus {
+  box-shadow: inset 0 0 0 1px #d33 inset 0 0 0 2px #fff;
+}
+.sd-button--invisible-text {
+  padding: 2.14285714em 0 0 2.14285714em;
+}
+.sd-button--invisible-text .sd-button__content {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  display: block;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.sd-button--invisible-text .sd-icon {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sd-button:disabled {
+  color: #72777d;
+  cursor: auto;
+}
+.sd-button:disabled:hover,
+.sd-button:disabled:focus {
+  background-color: #fff;
+}
+.sd-button:disabled.sd-button--framed {
+  background-color: #c8ccd1;
+  border-color: #c8ccd1;
+  color: #fff;
+}
+.sd-button:disabled.sd-button--framed:hover,
+.sd-button:disabled.sd-button--framed:focus {
+  background-color: #c8ccd1;
+  border-color: #c8ccd1;
+  box-shadow: none;
+}
+.sd-button:disabled:not( .sd-button--framed ) .sd-icon {
+  opacity: 0.51;
+}
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
+/**
+ * WikimediaUI Base v0.18.1
+ * Wikimedia Foundation user interface base variables
+ * https://gerrit.wikimedia.org/g/wikimedia-ui-base/
+ *
+ * See also https://design.wikimedia.org/style-guide/
+ */
+.sd-select-menu {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  border: 1px solid #a2a9b1;
+  border-radius: 0 0 2px 2px;
+  box-sizing: border-box;
+  left: 0;
+  margin-bottom: -1px;
+  margin-top: -1px;
+  max-width: 100%;
+  min-width: 100%;
+  position: absolute;
+  z-index: 4;
+}
+@media screen and (min-width: 720px) {
+.sd-select-menu {
+    max-width: 50em;
+}
+}
+.sd-select-menu__list-item {
+  -webkit-transition: background-color 100ms, color 100ms;
+  -moz-transition: background-color 100ms, color 100ms;
+  transition: background-color 100ms, color 100ms;
+  color: #202122;
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 7px 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media screen and (min-width: 720px) {
+.sd-select-menu__list-item {
+    white-space: nowrap;
+}
+}
+.sd-select-menu__list-item--active {
+  background-color: #eaecf0;
+  color: #000;
+}
+.sd-select-menu__list-item--selected {
+  background-color: #eaf3ff;
+}
+.sd-select-menu__list-item--active.sd-select-menu__list-item--selected {
+  color: #36c;
+}
+ul.sd-select-menu__list {
+  margin: 0;
+  padding: 0;
+}
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
+/**
+ * WikimediaUI Base v0.18.1
+ * Wikimedia Foundation user interface base variables
+ * https://gerrit.wikimedia.org/g/wikimedia-ui-base/
+ *
+ * See also https://design.wikimedia.org/style-guide/
+ */
+.sd-input {
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.sd-input__wrapper {
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  width: auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-box-ordinal-group: 0;
+  -moz-box-ordinal-group: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  position: relative;
+}
+.sd-input__label {
+  display: block;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.sd-input__icon,
+.sd-input__indicator {
+  line-height: 1;
+  padding-left: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sd-input__icon {
+  padding-left: 8px;
+}
+.sd-input__indicator {
+  color: #72777d;
+  cursor: pointer;
+  padding-right: 8px;
+  right: 0;
+}
+.sd-input__indicator .sd-icon {
+  font-size: 0.85714286em;
+}
+.sd-input__input {
+  -webkit-box-shadow: inset 0 0 0 1px transparent;
+  box-shadow: inset 0 0 0 1px transparent;
+  -webkit-transition: border-color 250ms, box-shadow 250ms;
+  -moz-transition: border-color 250ms, box-shadow 250ms;
+  transition: border-color 250ms, box-shadow 250ms;
+  background-color: #fff;
+  border: 1px solid #a2a9b1;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-size: inherit;
+  height: 32 / 16 / 0.875 / 1em;
+  line-height: 1.28571429em;
+  margin: 0;
+  padding: 6px 28px 6px 36px;
+  width: 100%;
+}
+.sd-input__input::placeholder {
+  color: #72777d;
+  opacity: 1;
+}
+.sd-input__input::-ms-clear {
+  display: none;
+}
+.sd-input__input:focus {
+  -webkit-box-shadow: inset 0 0 0 1px #36c;
+  box-shadow: inset 0 0 0 1px #36c;
+  border-color: #36c;
+  outline: 0;
+}
+.sd-input__input[type='search']::-webkit-search-decoration,
+.sd-input__input[type='search']::-webkit-search-cancel-button {
+  display: none;
+}
+.sd-input--pending .sd-input__input {
+  background-color: #ddd;
+  background-image: -webkit-linear-gradient(135deg, #fff 25%, transparent 25%, transparent 50%, #fff 50%, #fff 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(135deg, #fff 25%, transparent 25%, transparent 50%, #fff 50%, #fff 75%, transparent 75%, transparent);
+  background-image: linear-gradient(135deg, #fff 25%, transparent 25%, transparent 50%, #fff 50%, #fff 75%, transparent 75%, transparent);
+  background-size: 1.5625em 1.5625em;
+  -webkit-animation: sd-pending-stripes 650ms linear infinite;
+  -moz-animation: sd-pending-stripes 650ms linear infinite;
+  animation: sd-pending-stripes 650ms linear infinite;
+}
+@-webkit-keyframes sd-pending-stripes {
+0% {
+    background-position: -1.5625em 0;
+}
+100% {
+    background-position: 0 0;
+}
+}
+@-moz-keyframes sd-pending-stripes {
+0% {
+    background-position: -1.5625em 0;
+}
+100% {
+    background-position: 0 0;
+}
+}
+@keyframes sd-pending-stripes {
+0% {
+    background-position: -1.5625em 0;
+}
+100% {
+    background-position: 0 0;
+}
+}
+.sd-input--button {
+  display: flex;
+}
+.sd-input--button > .sd-input__wrapper .sd-input__input {
+  flex: 1;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.sd-input--button .sd-input__button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left-width: 0;
+  height: 32 / 16 / 0.875 / 1em;
+  line-height: 1.28571429em;
+  margin: 0;
+}
+.sd-input:hover__input {
+  border-color: #72777d;
+}
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
+/**
+ * WikimediaUI Base v0.18.1
+ * Wikimedia Foundation user interface base variables
+ * https://gerrit.wikimedia.org/g/wikimedia-ui-base/
+ *
+ * See also https://design.wikimedia.org/style-guide/
+ */
+.sd-message {
+  color: #000;
+  font-weight: bold;
+  max-width: 50em;
+  position: relative;
+}
+.sd-message--error {
+  color: #d33;
+}
+.sd-message--success {
+  color: #14866d;
+}
+.sd-message--block {
+  color: #000;
+  font-weight: normal;
+  padding: 16px 24px;
+}
+.sd-message--block.sd-message--notice {
+  background-color: #eaecf0;
+  border: 1px solid #a2a9b1;
+}
+.sd-message--block.sd-message--error {
+  background-color: #fee7e6;
+  border: 1px solid #d33;
+}
+.sd-message--block.sd-message--warning {
+  background-color: #fef6e7;
+  border: 1px solid #fc3;
+}
+.sd-message--block.sd-message--success {
+  background-color: #d5fdf4;
+  border: 1px solid #14866d;
+}
+.sd-message .sd-icon {
+  position: absolute;
+}
+.sd-message__content {
+  margin-left: 2em;
+}
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
+/**
+ * WikimediaUI Base v0.18.1
+ * Wikimedia Foundation user interface base variables
+ * https://gerrit.wikimedia.org/g/wikimedia-ui-base/
+ *
+ * See also https://design.wikimedia.org/style-guide/
+ */
+.sd-select {
+  max-width: 50em;
+  position: relative;
+}
+.sd-select__handle {
+  -webkit-transition: color 100ms;
+  -moz-transition: color 100ms;
+  transition: color 100ms;
+  color: #202122;
+  font-size: 0.85714286em;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sd-select__content {
+  -webkit-transition: background-color 100ms, border-color 100ms, box-shadow 100ms;
+  -moz-transition: background-color 100ms, border-color 100ms, box-shadow 100ms;
+  transition: background-color 100ms, border-color 100ms, box-shadow 100ms;
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #202122;
+  cursor: pointer;
+  min-height: 32px;
+  padding: 11px 36px 11px 12px;
+  position: relative;
+  width: 100%;
+}
+@media screen and (min-width: 720px) {
+.sd-select__content {
+    padding: 6px 36px 6px 12px;
+}
+}
+.sd-select__content:last-child {
+  margin-right: 0;
+}
+.sd-select__content:hover {
+  background-color: #fff;
+  color: #404244;
+  border-color: #a2a9b1;
+}
+.sd-select__content:hover .sd-select__handle {
+  color: #404244;
+}
+.sd-select__content:focus {
+  -webkit-box-shadow: inset 0 0 0 1px #36c;
+  box-shadow: inset 0 0 0 1px #36c;
+  border-color: #36c;
+  outline: 0;
+}
+.sd-select__content:active {
+  color: #000;
+  border-color: #72777d;
+}
+.sd-select--open .sd-select__content {
+  background-color: #fff;
+}
+.sd-select--open .sd-select__handle {
+  color: #202122;
+}
+.sd-select--disabled .sd-select__content {
+  background-color: #eaecf0;
+  border-color: #c8ccd1;
+  color: #72777d;
+  cursor: auto;
+  text-shadow: 0 1px 1px #fff;
+}
+.sd-select--disabled .sd-select__content:hover .sd-select__handle {
+  color: #72777d;
+}
+.sd-select--disabled .sd-select__content:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #c8ccd1;
+  outline: 0;
+}
+.sd-select--disabled .sd-select__handle {
+  color: #72777d;
+}
+.sd-tab-fade-in-enter {
+  opacity: 0;
+}
+.sd-tab-fade-in-enter-active {
+  transition: opacity 0.25s;
+}
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
+/**
+ * WikimediaUI Base v0.18.1
+ * Wikimedia Foundation user interface base variables
+ * https://gerrit.wikimedia.org/g/wikimedia-ui-base/
+ *
+ * See also https://design.wikimedia.org/style-guide/
+ */
+.sd-tabs__header {
+  -webkit-box-shadow: inset 0 -1px 0 0 #a2a9b1;
+  box-shadow: inset 0 -1px 0 0 #a2a9b1;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.sd-tabs__header--gradient {
+  position: relative;
+}
+.sd-tabs__header--gradient:after {
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(85%, rgba(255, 255, 255, 0)), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 85%, #ffffff 100%);
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 85%, #ffffff 100%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 85%, #ffffff 100%);
+  background-color: transparent;
+  content: '';
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.sd-tabs__tabs-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-overflow-scrolling: touch;
+  -sdms-overflow-style: -sdms-autohiding-scrollbar;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.sd-tabs__tabs-list::-webkit-scrollbar {
+  -webkit-appearance: none;
+  display: none;
+}
+.sd-tabs__tabs-list__item {
+  -webkit-transition: color 100ms, box-shadow 100ms;
+  -moz-transition: color 100ms, box-shadow 100ms;
+  transition: color 100ms, box-shadow 100ms;
+  color: #404244;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 6px 8px 0 0;
+  padding: 11px 12px;
+  white-space: nowrap;
+}
+@media screen and (min-width: 720px) {
+.sd-tabs__tabs-list__item {
+    margin: 6px 6px 0 0;
+    padding: 6px 12px;
+}
+}
+.sd-tabs__tabs-list__item--current {
+  -webkit-box-shadow: inset 0 -2px 0 0 #36c;
+  box-shadow: inset 0 -2px 0 0 #36c;
+  color: #36c;
+}
+.sd-tabs__tabs-list__item:hover {
+  -webkit-box-shadow: inset 0 -2px 0 0 #447ff5;
+  box-shadow: inset 0 -2px 0 0 #447ff5;
+  color: #447ff5;
+}
+.sd-tabs__tabs-list__item:active {
+  -webkit-box-shadow: inset 0 -2px 0 0 #2a4b8d;
+  box-shadow: inset 0 -2px 0 0 #2a4b8d;
+  color: #2a4b8d;
+}
+.sd-tabs__tabs-list__item:focus {
+  outline: 0;
+}
+.sd-tabs__tabs-list__item--disabled {
+  color: #72777d;
+  cursor: not-allowed;
+}
+.sd-tabs__tabs-list__item--disabled--current,
+.sd-tabs__tabs-list__item--disabled:hover,
+.sd-tabs__tabs-list__item--disabled:active {
+  box-shadow: unset;
+  color: #72777d;
+}
+.sd-tabs__tabs-list label {
+  cursor: pointer;
+}
+.sd-tabs__tabs-list:focus {
+  outline: 0;
+}
+.sd-tabs__tabs-list:focus .sd-tabs__tabs-list__item--current {
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 2px #36c;
+}

@@ -26,6 +26,7 @@ This example takes advantage of Vite's "library mode" feature:
 https://vitejs.dev/guide/build.html#library-mode. As configured, this project
 can do the following:
 
+- Vue 2 support
 - `vue` dependency is externalized, not included in the build (and handled as a `window.Vue` global for the UMD build).
 - Single-file Components are pre-compiled into render functions
 - LESS imports are processed and resulting CSS is exported into a separate .css file
